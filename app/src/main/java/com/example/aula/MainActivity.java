@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Button butao= findViewById(R.id.button);
         TextView tv = findViewById(R.id.textView);
         butao.setOnClickListener(view -> {
-            contador++;
+            contador = (int)(Math.random() * 100) + 1;
             tv.setText(Integer.toString(contador));
         });
 
