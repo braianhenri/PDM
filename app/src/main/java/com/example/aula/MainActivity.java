@@ -30,11 +30,17 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        EditText txtMin = findViewById(R.id.edmin);
-        EditText txtMax = findViewById(R.id.edmax);
+        
         Button butao = findViewById(R.id.button);
         TextView tv = findViewById(R.id.textView);
         butao.setOnClickListener(view -> {
+            EditText txtMin = findViewById(R.id.edmin);
+            EditText txtMax = findViewById(R.id.edmax);
+            String smin = txtMin.getText().toString();
+            if (smin.trim().equals("")){
+                txtMin.setError("informe um valor bobão");
+                txtMin.requestFocus();
+            }
 
 
             Random random = new Random();
