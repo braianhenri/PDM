@@ -2,6 +2,7 @@ package com.example.aula;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -16,6 +17,7 @@ import kotlin.random.URandomKt;
 
 public class MainActivity extends AppCompatActivity {
     int contador = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -28,14 +30,22 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-
-        Button butao= findViewById(R.id.button);
+        EditText txtMin = findViewById(R.id.edmin);
+        EditText txtMax = findViewById(R.id.edmax);
+        Button butao = findViewById(R.id.button);
         TextView tv = findViewById(R.id.textView);
         butao.setOnClickListener(view -> {
+
+
             Random random = new Random();
-            contador++;
-            tv.setText(Integer.toString(random.nextInt()));
+            int min;
+            min = Integer.parseInt(txtMin.getText().toString());
+            int max;
+            max = Integer.parseInt(txtMax.getText().toString());
+            int r = (random.nextInt( max - min)) + min;
+            tv.setText(Integer.toString(r));
         });
+
 
     }
 }
