@@ -3,6 +3,7 @@ package com.example.aula;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
         ListView listanomes = findViewById(R.id.listinha);
         ArrayAdapter<String> adapto = new ArrayAdapter<>(getApplicationContext(), R.layout.item_lista, R.id.textView, nomes);
         listanomes.setAdapter(adapto);
-        listanomes.setOnItemClickListener((adapterView, view, i, l) -> {});
+        listanomes.setOnItemClickListener((adapterView, view, i, l) -> {
+            Toast.makeText(getApplicationContext(),nomes[i], Toast.LENGTH_LONG).show();
+        });
 
 
     }
