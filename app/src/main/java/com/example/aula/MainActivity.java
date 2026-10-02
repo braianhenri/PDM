@@ -1,8 +1,8 @@
 package com.example.aula;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    String nomes[] = new String[]{"beninca","joao","marcelo","boos","robson","breno","bruno"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -22,12 +23,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        EditText txPeso = findViewById(R.id.EditTxtPeso);
-        EditText txAltura = findViewById(R.id.EditTxtAltura);
-        Button btnCalculo = findViewById(R.id.btnCalc);
-        btnCalculo.(){
-
-        }
+        ListView listanomes = findViewById(R.id.listinha);
+        ArrayAdapter<String> adapto = new ArrayAdapter<>(getApplicationContext(), R.layout.item_lista, R.id.textView, nomes);
+        listanomes.setAdapter(adapto);
+        listanomes.setOnItemClickListener((adapterView, view, i, l) -> {});
 
 
     }
