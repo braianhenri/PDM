@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="127dp"
@@ -22,7 +23,7 @@
     <ListView
         android:id="@+id/listinha"
         android:layout_width="409dp"
-        android:layout_height="900sp"
+        android:layout_height="450sp"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
