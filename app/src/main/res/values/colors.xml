@@ -2,4 +2,44 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Warm Color Scheme - Light -->
+    <color name="primary_light">#994600</color>
+    <color name="on_primary_light">#FFFFFF</color>
+    <color name="primary_container_light">#FFDCC3</color>
+    <color name="on_primary_container_light">#341200</color>
+    <color name="secondary_light">#77574B</color>
+    <color name="on_secondary_light">#FFFFFF</color>
+    <color name="secondary_container_light">#FFDBCF</color>
+    <color name="on_secondary_container_light">#2C160D</color>
+    <color name="tertiary_light">#676029</color>
+    <color name="on_tertiary_light">#FFFFFF</color>
+    <color name="tertiary_container_light">#EFE4A3</color>
+    <color name="on_tertiary_container_light">#201C00</color>
+    <color name="background_light">#FFF8F5</color>
+    <color name="on_background_light">#231A15</color>
+    <color name="surface_light">#FFF8F5</color>
+    <color name="on_surface_light">#231A15</color>
+    <color name="surface_variant_light">#F5DED4</color>
+    <color name="on_surface_variant_light">#53433C</color>
+
+    <!-- Warm Color Scheme - Dark -->
+    <color name="primary_dark">#FFB582</color>
+    <color name="on_primary_dark">#522300</color>
+    <color name="primary_container_dark">#753400</color>
+    <color name="on_primary_container_dark">#FFDCC3</color>
+    <color name="secondary_dark">#E7BEAF</color>
+    <color name="on_secondary_dark">#442A20</color>
+    <color name="secondary_container_dark">#5D4035</color>
+    <color name="on_secondary_container_dark">#FFDBCF</color>
+    <color name="tertiary_dark">#D2C889</color>
+    <color name="on_tertiary_dark">#373100</color>
+    <color name="tertiary_container_dark">#4E4814</color>
+    <color name="on_tertiary_container_dark">#EFE4A3</color>
+    <color name="background_dark">#1A120E</color>
+    <color name="on_background_dark">#F0E0D9</color>
+    <color name="surface_dark">#1A120E</color>
+    <color name="on_surface_dark">#F0E0D9</color>
+    <color name="surface_variant_dark">#53433C</color>
+    <color name="on_surface_variant_dark">#D8C2B9</color>
 </resources>
